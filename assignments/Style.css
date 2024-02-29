@@ -5,7 +5,7 @@ font-family: sans-serif;
 }
 header {
     background-color: aqua;
-    color: white;
+    color: rgb(0, 0, 0);
     padding:2rem;
 }
 }
