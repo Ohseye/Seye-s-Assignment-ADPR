@@ -2,6 +2,7 @@ body {
 
 margin: 0 10%;
 font-family: sans-serif;
+background-image: url("bg.webp");
 }
 header {
     background-color: aqua;
