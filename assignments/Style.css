@@ -1,36 +1,41 @@
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
 body {
 
-margin: 0 10%;
-font-family: sans-serif;
-background-image: url("bg.webp");
+    margin: 0;
+    background-image: url("bg.webp");
 }
-.container{
-    background-color: white;
-}
+
 header {
     background-color: aqua;
     color: rgb(7, 7, 7);
-    padding:2rem;
+    padding: 2rem;
 }
+
+h1 {
+    font-size: 2rem;
 }
-h1{  z
-font-size:2rem;
-}
+
 h2 {
 
-font-size: 1.5em;
+    font-size: 1.5em;
 }
-h3{
-font-size:1.25rem;
+
+h3 {
+    font-size: 1.25rem;
 }
+
 img {
-display: block;
-margin-left: auto;
-margin-right: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
-    background-color: #002d71;   
+    background-color: #002d71;
 }
 
 nav ul {
@@ -54,4 +59,29 @@ nav ul li a {
 
 nav ul li a:hover {
     background-color: #2f94c3;
+}
+
+/*******layout*****/
+.container {
+    background-color: white;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 auto;
+    width: min(95%, 75);
+}
+
+.container>* {
+    grid-column: span 12;
+}
+
+/*Desktop Layout*/
+@media screen and (min-width: 40rem) {
+    .col-span-8 {
+        grid-column: span 8;
+    }
+
+    .col-span-8 {
+        grid-column: span 4;
+    }
 }
