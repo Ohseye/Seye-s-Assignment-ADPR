@@ -6,11 +6,13 @@
 body {
 
     margin: 0;
-    background-image: url("bg.webp");
+    background-image:url(https://www.toptal.com/designers/subtlepatterns/uploads/moroccan-flower.png);
 }
 
 header {
     background-color: aqua;
+    background-image:url("https://unsplash.com/photos/a-close-up-of-a-leafy-plant-with-water-droplets-on-it-sPVSHAvNw04"
+    )
     color: rgb(7, 7, 7);
     padding: 2rem;
 }
@@ -65,8 +67,8 @@ nav ul li a:hover {
 .container {
     background-color: white;
     display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(12, 1fr);
+    grid-template-columns: repeat (3fr 250px 25%);
+    gap: 10px;
     margin: 0 auto;
     width: min(95%, 75);
 }
