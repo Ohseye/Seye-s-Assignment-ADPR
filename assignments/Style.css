@@ -1,4 +1,4 @@
-* {
+*{
     box-sizing: border-box;
     font-family: sans-serif;
 }
@@ -14,6 +14,7 @@ header {
     );
     color: rgb(7, 7, 7);
     padding: 2rem;
+    order: 1;
 }
 
 h1 {
@@ -37,6 +38,7 @@ img {
 
 nav {
     background-color: #002d71;
+    order: 2;
 }
 
 nav ul {
@@ -83,11 +85,20 @@ a:hover{
     grid-column: span 12;
 }
 
+.col-span-8 {
+    order: 3;
+}
+
+.col-span-4 {
+    order: 4;
+}
+
 /*Desktop Layout*/
 @media screen and (min-width: 40rem) {
     .col-span-8 {
         grid-column: span 8;
         padding-left: 20px;
+        order: 3;
     }
 
     .col-span-4 {
@@ -105,6 +116,7 @@ a:hover{
 
 footer {
     padding-left: 20px;
+    order: 5;
 }
 
 #proj {
@@ -114,6 +126,30 @@ footer {
 
 /******* Components *****/
 .button{
-    color:rgb(1, 0, 0)
- ;Background-color:#69c3ed;
+    color:rgb(1, 0, 0);
+    background-color:#69c3ed;
 }
+
+/* media styles */
+@media (max-width:720px) {
+
+    nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        grid-template-columns: auto;
+        row-gap: 0;
+    }
+
+    .col-span-8 {
+        order: 4;
+    }
+    
+    .col-span-4 {
+        order: 3;
+    }
+}
+
+
