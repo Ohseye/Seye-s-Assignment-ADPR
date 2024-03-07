@@ -61,7 +61,14 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #2f94c3;
 }
-
+a:link, a:visited{
+    color:#69c3ed;
+    text-decoration: none;
+}
+a:hover{
+    color:#0c1e27;
+    text-decoration: underline;
+}
 /*******layout*****/
 .container {
     background-color: white;
@@ -103,4 +110,10 @@ footer {
 #proj {
     text-align: center;
 
+}
+
+/******* Components *****/
+.button{
+    color:rgb(1, 0, 0)
+ ;Background-color:#69c3ed;
 }
