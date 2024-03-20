@@ -1,9 +1,11 @@
 {
 	"folders": [
 		{
+			"name": "assignments",
 			"path": "."
 		},
 		{
+			"name": "Images",
 			"path": "../../../Desktop/Images"
 		}
 	],
