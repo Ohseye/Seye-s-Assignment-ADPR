@@ -152,49 +152,50 @@ footer {
     }
 }
 
-/* Card styles */
 
 .card-stack {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 8px;
-    margin-bottom: 40px;
-  }
-  .card {
-  /*   display: inline-block; */
-  /*   flex: 0 1 200px; */
-    border: 2px solid #ccc;
-    border-radius: 12px;
-    overflow: hidden;
-  }
-  
-  .card-body {
-    padding: 20px;
-  }
-  
-  .card-heading {
-    margin-top: 0;
-  }
-  
-  .card-subtitle {
-    color: #888;
-  }
-  
-  .card-img {
-  /*   display: block; */
-    width: 100%;
-  }
-  
-  .card-btn {
-    display: inline-block;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: rgb(48,110,193);
-    color: #fff;
-    border-radius: 6px;
-    transition: all 0.2s ease;
-  }
-  
-  .card-btn:hover {
-    background-color: rgb(68,130,213);
-  }
+  display: flex; /* Change display property to flex */
+  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
+  gap: 8px;
+  margin-bottom: 40px;
+}
+
+.card {
+    display: flex;
+  flex: 1 1 200px; /* Flex properties to control width */
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-right: 8px; /* Add margin between cards */
+}
+
+.card-body {
+  padding: 20px;
+  display:absolute;
+}
+
+.card-heading {
+  margin-top: 0;
+}
+
+.card-subtitle {
+  color: #888;
+}
+
+.card-img {
+  width: 100%;
+}
+
+.card-btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px 20px;
+  background-color: rgb(48,110,193);
+  color: #fff;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.card-btn:hover {
+  background-color: rgb(68,130,213);
+}
