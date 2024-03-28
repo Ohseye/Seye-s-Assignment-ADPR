@@ -72,25 +72,25 @@ a:hover{
     text-decoration: underline;
 }
 /*******layout*****/
-.container {
+.wrap {
     background-color: white;
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 1.5rem;
-    margin: 0 auto;
-    width: min(95%,75rem);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.container > * {
+.wrap > * {
     grid-column: span 12;
 }
 
 .col-span-8 {
-    order: 3;
+    /* order: 3; */
 }
 
 .col-span-4 {
-    order: 4;
+    /* order: 4; */
 }
 
 /*Desktop Layout*/
@@ -98,7 +98,7 @@ a:hover{
     .col-span-8 {
         grid-column: span 8;
         padding-left: 20px;
-        order: 3;
+        /* order: 3; */
     }
 
     .col-span-4 {
@@ -116,7 +116,7 @@ a:hover{
 
 footer {
     padding-left: 20px;
-    order: 5;
+    /* order: 5; */
 }
 
 #proj {
@@ -144,11 +144,11 @@ footer {
     }
 
     .col-span-8 {
-        order: 4;
+        /* order: 4; */
     }
     
     .col-span-4 {
-        order: 3;
+        /* order: 3; */
     }
 }
 
