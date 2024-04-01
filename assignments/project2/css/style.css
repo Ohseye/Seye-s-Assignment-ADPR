@@ -1,3 +1,26 @@
 body {
   background-color: yellow;
 }
+
+nav {
+  display: inline-block;
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  color: blue;
+}
+
+li {
+  float:left;
+}
+
+li a {
+  color: red;
+  display: block;
+  padding: 8px;
+}
