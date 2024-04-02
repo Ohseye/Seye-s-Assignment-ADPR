@@ -43,6 +43,3 @@ footer {
   margin-left: 5%;
 }
 
-.wrap > * {
-  grid-column: span 12;
-}
