@@ -1,10 +1,12 @@
+
 body {
-  background-color: yellow;
+  background-color: #fef748;
 }
 
-nav {
-  display: inline-block;
-  text-align: center;
+nav ul {
+display: flex;
+text-align: center;
+justify-content: center;
 }
 
 ul {
@@ -16,11 +18,31 @@ ul {
 }
 
 li {
-  float:left;
+  text-align: center;
 }
 
-li a {
-  color: red;
-  display: block;
+nav li a {
+  display: inline-block;
   padding: 8px;
+  text-decoration: none;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  text-align: center;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+footer {
+  margin-left: 5%;
+}
+
+.wrap > * {
+  grid-column: span 12;
 }
