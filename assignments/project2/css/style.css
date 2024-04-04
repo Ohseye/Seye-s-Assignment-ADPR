@@ -28,6 +28,14 @@ nav ul li a:hover {
   background-color: #f10505;
 }
 /*******layout*****/
+.wrapper {
+  width: 100%;
+  max-width: 1120px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
 .wrap {
     background-color: white;
     display: grid;
@@ -62,6 +70,7 @@ nav li a {
 
 h1 {
   text-align: center;
+  padding-top: 40px;
 }
 
 img {
@@ -72,6 +81,12 @@ img {
 }
 
 footer {
-  margin-left: 5%;
+  margin-top: 20px;
+  padding-bottom: 20px;
 }
 
+.slider-caption {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
