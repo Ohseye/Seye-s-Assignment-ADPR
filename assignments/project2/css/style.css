@@ -9,6 +9,22 @@ text-align: center;
 justify-content: center;
 }
 
+
+
+/*******layout*****/
+.wrap {
+    background-color: white;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 1.5rem;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.wrap > * {
+    grid-column: span 12;
+}
+
 ul {
   list-style-type: none;
   margin: 0;
