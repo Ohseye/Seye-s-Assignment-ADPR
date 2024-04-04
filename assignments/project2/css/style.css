@@ -8,9 +8,29 @@ display: flex;
 text-align: center;
 justify-content: center;
 }
+nav ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 40px;
+}
 
+nav ul li a {
+  display: block;
+  color: #f30909;
+  text-decoration: none;
+  padding: 16px 30px;
+  margin: 0px 20px;
+  border-radius: 12px;
+}
 
-
+nav ul li a:hover {
+  background-color: #f30303;
+}
+a:link, a:visited{
+  color:#fb0b0b;
+  text-decoration: none;
 /*******layout*****/
 .wrap {
     background-color: white;
