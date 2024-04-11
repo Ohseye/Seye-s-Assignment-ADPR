@@ -1,48 +1,57 @@
-jQuery(document).ready(function ($) {
 
-    $('#checkbox').change(function(){
-      setInterval(function () {
-          moveRight();
-      }, 3000);
+  /* Thumbnail*/
+
+
+  $(document).ready(function () {
+    // reference for main items
+    var slider = $('#slider');
+    // reference for thumbnail items
+    var thumbnailSlider = $('#thumbnailSlider');
+    //transition time in ms
+    var duration = 500;
+  
+    // carousel function for main slider
+    slider.owlCarousel({
+     loop:false,
+     nav:false,
+     items:1
+    }).on('changed.owl.carousel', function (e) {
+     //On change of main item to trigger thumbnail item
+     thumbnailSlider.trigger('to.owl.carousel', [e.item.index, duration, true]);
     });
-    
-      var slideCount = $('#slider ul li').length;
-      var slideWidth = $('#slider ul li').width();
-      var slideHeight = $('#slider ul li').height();
-      var sliderUlWidth = slideCount * slideWidth;
-      
-      $('#slider').css({ width: slideWidth, height: slideHeight });
-    //   $('#slider').css({ width: '1000px', height: '500px' });
-      
-      $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-      
-      $('#slider ul li:last-child').prependTo('#slider ul');
   
-      function moveLeft() {
-          $('#slider ul').animate({
-              left: + slideWidth
-          }, 200, function () {
-              $('#slider ul li:last-child').prependTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
+    // carousel function for thumbnail slider
+    thumbnailSlider.owlCarousel({
+     loop:false,
+     center:true, //to display the thumbnail item in center
+     nav:false,
+     responsive:{
+      0:{
+       items:3
+      },
+      600:{
+       items:4
+      },
+      1000:{
+       items:6
+      }
+     }
+    }).on('click', '.owl-item', function () {
+     // On click of thumbnail items to trigger same main item
+     slider.trigger('to.owl.carousel', [$(this).index(), duration, true]);
   
-      function moveRight() {
-          $('#slider ul').animate({
-              left: - slideWidth
-          }, 200, function () {
-              $('#slider ul li:first-child').appendTo('#slider ul');
-              $('#slider ul').css('left', '');
-          });
-      };
+    }).on('changed.owl.carousel', function (e) {
+     // On change of thumbnail item to trigger main item
+     slider.trigger('to.owl.carousel', [e.item.index, duration, true]);
+    });
   
-      $('a.control_prev').click(function () {
-          moveLeft();
-      });
   
-      $('a.control_next').click(function () {
-          moveRight();
-      });
-  
-  });    
-  
+    //These two are navigation for main items
+    $('.slider-right').click(function() {
+     slider.trigger('next.owl.carousel');
+    });
+    $('.slider-left').click(function() {
+     slider.trigger('prev.owl.carousel');
+    });
+   });
+   
