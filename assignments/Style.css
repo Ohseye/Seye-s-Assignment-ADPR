@@ -1,17 +1,14 @@
 *{
     box-sizing: border-box;
     font-family: sans-serif;
+    background-color:#F3AEAE;
 }
 
 body {
     margin:0;
-    background-image:url(https://www.toptal.com/designers/subtlepatterns/uploads/moroccan-flower.png);
-}
-
+    
 header {
-    background-color: aqua;
-    background-image:url("https://unsplash.com/photos/a-close-up-of-a-leafy-plant-with-water-droplets-on-it-sPVSHAvNw04"
-    );
+  
     color: rgb(7, 7, 7);
     padding: 2rem;
     order: 1;
