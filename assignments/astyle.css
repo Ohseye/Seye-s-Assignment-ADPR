@@ -19,7 +19,7 @@ h1 {
     font-size: 2rem;
     font-family: "Platypi", serif;
     font-optical-sizing: auto;
-    font-weight: 600;
+    font-weight: <weight>;
     font-style: normal;
 }
 
@@ -58,7 +58,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #2f94c3;
+    background-color: #F3AEAE;
 }
 a:link, a:visited{
     color:#69c3ed;
