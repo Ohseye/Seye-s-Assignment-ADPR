@@ -223,3 +223,10 @@ footer {
 .capt {
     margin: 20px;
 }
+/* increase the size of the cv image*/
+.cv.png{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+}
