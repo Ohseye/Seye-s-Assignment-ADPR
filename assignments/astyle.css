@@ -301,7 +301,6 @@ footer {
    .picandcap a:focus {
      outline: none;
      color: blue; 
-     text-overflow: ellipsis;
    }
 
    /* Highlight links on click */
