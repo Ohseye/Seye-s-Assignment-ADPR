@@ -1,15 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Platypi:ital,wght@0,300..800;1,300..800&display=swap');
-
-*{
+/* CSS to align paragraphs */
+p {
+    text-align: center;
+  }
+* {
     box-sizing: border-box;
     font-family: sans-serif;
-    background-color:#F3AEAE;
+    background-color: #F3AEAE;
 }
 
 body {
-    margin:0;
+    margin: 0;
 }
-    
+
 header {
     padding: 2rem;
     order: 1;
@@ -62,14 +65,18 @@ nav ul li a {
 nav ul li a:hover {
     background-color: #F3AEAE;
 }
-a:link, a:visited{
-    color:#69c3ed;
+
+a:link,
+a:visited {
+    color: #69c3ed;
     text-decoration: none;
 }
-a:hover{
-    color:#0c1e27;
+
+a:hover {
+    color: #0c1e27;
     text-decoration: underline;
 }
+
 /*******layout*****/
 .wrap {
     background-color: white;
@@ -80,7 +87,7 @@ a:hover{
     padding-bottom: 20px;
 }
 
-.wrap > * {
+.wrap>* {
     grid-column: span 12;
 }
 
@@ -124,9 +131,9 @@ footer {
 }
 
 /******* Components *****/
-.button{
-    color:rgb(1, 0, 0);
-    background-color:#69c3ed;
+.button {
+    color: rgb(1, 0, 0);
+    background-color: #69c3ed;
 }
 
 /* media styles */
@@ -145,7 +152,7 @@ footer {
     .col-span-8 {
         /* order: 4; */
     }
-    
+
     .col-span-4 {
         /* order: 3; */
     }
@@ -153,57 +160,62 @@ footer {
 
 
 .card-stack {
-  display: flex; /* Change display property to flex */
-  flex-wrap: wrap; /* Allow flex items to wrap onto multiple lines */
-  gap: 8px;
-  margin-bottom: 40px;
+    display: flex;
+    /* Change display property to flex */
+    flex-wrap: wrap;
+    /* Allow flex items to wrap onto multiple lines */
+    gap: 8px;
+    margin-bottom: 40px;
 }
 
 .card {
     display: flex;
-  flex: 1 1 200px; /* Flex properties to control width */
-  border: 2px solid #ccc;
-  border-radius: 12px;
-  overflow: hidden;
-  margin-right: 8px; /* Add margin between cards */
+    flex: 1 1 200px;
+    /* Flex properties to control width */
+    border: 2px solid #ccc;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-right: 8px;
+    /* Add margin between cards */
 }
 
 .card-body {
-  padding: 20px;
-  display:absolute;
+    padding: 20px;
+    display: absolute;
 }
 
 .card-heading {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .card-subtitle {
-  color: #888;
+    color: #888;
 }
 
 .card-img {
-  width: 100%;
+    width: 100%;
 }
 
 .card-btn {
-  display: inline-block;
-  text-decoration: none;
-  padding: 10px 20px;
-  background-color: rgb(48,110,193);
-  color: #fff;
-  border-radius: 6px;
-  transition: all 0.2s ease;
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: rgb(48, 110, 193);
+    color: #fff;
+    border-radius: 6px;
+    transition: all 0.2s ease;
 }
 
 .card-btn:hover {
-  background-color: rgb(68,130,213);
+    background-color: rgb(68, 130, 213);
 }
+
 .concert-one-regular {
     font-family: "Concert One", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
+}
+
 
 .picandcap {
     position: relative;
@@ -211,8 +223,6 @@ footer {
     text-align: center;
     vertical-align: middle;
 }
-
-
 footer {
     position: absolute;
     bottom: 0;
@@ -223,10 +233,60 @@ footer {
 .capt {
     margin: 20px;
 }
+
 /* increase the size of the cv image*/
-.cv.png{
+.cv.png {
     width: 300px;
     height: 300px;
     display: block;
     margin-left: auto;
 }
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Style inputs */
+  input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 7px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: white;
+  }
+  
+  input[type=submit] {
+    background-color: #000000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  input[type=submit]:hover {
+    background-color: black;
+  }
+  
+  /* Create two columns that float next to eachother */
+  .column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    color: white;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }

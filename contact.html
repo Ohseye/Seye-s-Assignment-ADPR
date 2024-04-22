@@ -9,11 +9,13 @@
   <style>
     /* Add CSS styling for the circular image */
     .img-circle {
-      border-radius: 100%; /* Set border-radius to 100% to make the image circular */
+      border-radius: 50%; /* Set border-radius to 50% for a perfect circle */
+      display: block; /* Add display block to center the image */
+      margin: 0 auto; /* Center the image horizontally */
     }
 
     /* Add CSS styling to center the caption */
-    caption {
+    .capt {
       text-align: center; /* Center the text within the caption */
     }
 
@@ -21,14 +23,40 @@
     h1 {
       text-align: center; /* Center the text horizontally */
     }
+
+    /* Add CSS for main content */
+    .main-content {
+      padding: 2rem;
+    }
+
+    /* Add CSS for contact form */
+    form {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    textarea,
+    input[type="submit"] {
+      width: calc(100% - 20px); /* Adjust input width */
+      margin: 5px; /* Add some margin between inputs */
+    }
+
+    input[type="submit"] {
+      width: auto; /* Set width to auto for submit button */
+    }
   </style>
-  
+
   <title>Oluseye Fakinlede</title>
 
 </head>
 
 <body>
-  <h1>Oluseye Fakinlede</h1>
+  <header>
+    <h1>Oluseye Fakinlede</h1>
+  </header>
   <nav>
     <ul>
       <li><a href="about.html">ABOUT</a></li>
@@ -37,18 +65,37 @@
       <li><a href="contact.html">CONTACT</a></li>
     </ul>
   </nav>
-  <div class="picandcap">
-    <!-- Add the img-circle class to make the image circular -->
-    <img src="/assignments/oluseye.jpg" class="img-responsive img-circle" alt="Oluseye Fakinlede"> 
-    <!-- Center the caption -->
-    <h3 class="capt">Writer/Journalist</h3>
+  <div class="container">
+    <div style="text-align:center">
+      <h2>Contact Me</h2>
+    </div>
+    <div class="right">
+      <div class="column">
+        <img src="/assignments/oluseye.jpg"style="border-radius 100">
+      </div>
+      <div class="column">
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+          </select>
+          <label for="subject">Subject</label>
+          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </div>
+    </div>
   </div>
-
   <footer>
     <div class="wrapper">
       <p>Copyright Oluseye Fakinlede © 2024. All rights reserved</p>
     </div>
   </footer>
 </body>
-
 </html>
