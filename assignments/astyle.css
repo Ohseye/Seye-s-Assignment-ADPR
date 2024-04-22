@@ -249,7 +249,7 @@ footer {
   input[type=text], select, textarea {
     width: 100%;
     padding: 12px;
-    border: 7px solid #ccc;
+    border: 7px solid white;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
@@ -287,6 +287,26 @@ footer {
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
       width: 100%;
-      margin-top: 0;
+      margin-top: 5;
     }
+  }
+   /* Highlight links on hover */
+   nav a:hover,
+   .picandcap a:hover {
+     color: blue; /* Change color on hover */
+   }
+
+   /* Highlight links on focus (for accessibility) */
+   nav a:focus,
+   .picandcap a:focus {
+     outline: none;
+     color: blue; 
+     text-overflow: ellipsis;
+   }
+
+   /* Highlight links on click */
+   /* Move paragraph text to the left */
+   .picandcap p {
+    text-align: left;
+    margin-left: 20px; /* Add margin to the left for better readability */
   }
