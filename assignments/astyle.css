@@ -28,7 +28,7 @@ h1 {
 
 h2 {
 
-    font-size: 1.5em;
+    font-size: 1.1em;
 }
 
 h3 {
@@ -256,7 +256,14 @@ footer {
     resize: vertical;
     background-color: white;
   }
-  
+
+  input[type=email]{ 
+    background-color: #ffffff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+  }
   input[type=submit] {
     background-color: #000000;
     color: white;
@@ -265,8 +272,9 @@ footer {
     cursor: pointer;
   }
   
-  input[type=submit]:hover {
-    background-color: black;
+  input[type=submit]:hover;{
+    background-color: white;
+    color: white;
   }
   
   /* Create two columns that float next to eachother */

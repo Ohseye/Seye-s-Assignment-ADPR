@@ -74,25 +74,31 @@
   </nav>
   <div class="container">
     <div style="text-align:center">
-      <h2>Text Me</h2>
+      <h2>Send Me A Message</h2>
     </div>
+    <!--------------------Form Added----------------->
     <div class="right">
       <div class="column">
         <img src="/assignments/oluseye.jpg" class="img-circle" alt="Oluseye Fakinlede">
-      </div>
-      <div class="column">
-        <form action="/action_page.php">
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for="country">Country</label>
-          <input type="text" id="country" name="country" placeholder="Your country">
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:170px"></textarea>
-          <input type="submit" value="Submit">
-        </form>
-  </div>
+      </div>  
+      <div>
+        <div class= "contact-form">
+        <form name="contact" method="POST" data-netlify="true">
+        <p>
+          <label>Your Name: <input type="text" name="name" /></label>
+        </p>
+        <p>
+          <label>Your Email: <input type="email" name="email" /></label>
+        </p>
+        <p>
+          <label>Message: <textarea name="message"></textarea></label>
+        </p>
+        <p>
+          <button type="submit">Send</button>
+        </p>
+      </form>
+ <!------------------Form Added------->
+      <div>
   <footer>
     <div class="wrapper">
       <p>Copyright Oluseye Fakinlede © 2024. All rights reserved</p>
