@@ -224,9 +224,10 @@ footer {
     vertical-align: middle;
 }
 footer {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    width: 100vw;
+    width: 100vw; */
+    margin-top: 40px;
     text-align: center;
 }
 
